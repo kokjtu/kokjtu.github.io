@@ -1,73 +1,75 @@
-# Forty - Jekyll Theme
+# Particle Jekyll Theme
 
-A Jekyll version of the "Forty" theme by [HTML5 UP](https://html5up.net/).  
+![](./particle.jpg)
 
-![Forty Theme](assets/images/forty.jpg "Forty Theme")
+This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
 
-# How to Use
+The Theme features:
 
-For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details, 
-or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
-and [creating pages](https://jekyllrb.com/docs/pages/).
+- Gulp
+- SASS
+- Sweet Scroll
+- Particle.js
+- BrowserSync
+- Font Awesome and Devicon icons
+- Google Analytics
+- Info Customization
 
-- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
-- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file.
+## Basic Setup
 
-# Added Features
+1. [Install Jekyll](http://jekyllrb.com)
+2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
+3. Edit `_config.yml` to personalize your site.
 
-* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
-* Use `_config.yml` to **set whether the homepage tiles should pull pages or posts**, as well as how many to display.
-* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
-* Set **featured images** in front matter.
+## Site and User Settings
 
-# Issues
-
-If you would like to report a bug, ask a question, request a feature, feel free to do so on [the GitLab repository](https://gitlab.com/andrewbanchich/forty-jekyll-theme) and I will be more than happy to help!
-
-Alternatively, you can open an issue via email by emailing [incoming+andrewbanchich/forty-jekyll-theme@incoming.gitlab.com](mailto:incoming+andrewbanchich/forty-jekyll-theme@incoming.gitlab.com).
-
-The GitHub repository is simply a mirror of the GitLab repository.
-
-# Credits
-
-Original README from HTML5 UP:
+You have to fill some informations on `_config.yml` to customize your site.
 
 ```
-Forty by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Site settings
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
 
-
-This is Forty, my latest and greatest addition to HTML5 UP and, per its incredibly
-creative name, my 40th (woohoo)! It's built around a grid of "image tiles" that are
-set up to smoothly transition to secondary landing pages (for which a separate page
-template is provided), and includes a number of neat effects (check out the menu!),
-extra features, and all the usual stuff you'd expect. Hope you dig it!
-
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		background-size polyfill (github.com/louisremi)
-		Misc. Sass functions (@HugoGiraudel)
-		Respond.js (j.mp/respondjs)
-		Skel (skel.io)
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+user_title: Anon Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
 ```
 
-Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).
+**Don't forget to change your url before you deploy your site!**
+
+## Color and Particle Customization
+- Color Customization
+  - Edit the sass variables
+- Particle Customization
+  - Edit the json data in particle function in app.js
+  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
+
+## Running the blog in local
+
+In order to compile the assets and run Jekyll on local you need to follow those steps:
+
+- Install [NodeJS](https://nodejs.org/)
+- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
+- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
+- Install dependencies: `yarn`
+- Run: `gulp`
+
+## Questions
+
+Having any issues file a [GitHub Issue](https://github.com/nrandecker/particle/issues/new).
+
+## License
+
+This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
+
+## Credits
+
+This theme was partially designed with the inspiration from these fine folks
+- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
+- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
